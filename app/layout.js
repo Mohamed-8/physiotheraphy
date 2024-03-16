@@ -1,4 +1,4 @@
-import {Lora } from "next/font/google";
+import { Lora } from "next/font/google";
 import "./globals.css";
 
 const lora = Lora({ subsets: ["latin"] });

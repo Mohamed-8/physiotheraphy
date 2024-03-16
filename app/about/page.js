@@ -1,11 +1,20 @@
 import Image from "next/image";
 import "../../public/page.css";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function About() {
   return (
-    <diV>
+    <div>
+      <Header />
       <div className="elementor-widget-container">
         <h2>About Me</h2>
+        <Image
+          src="/title/mask.webp"
+          width={150}
+          height={40}
+          alt="about section"
+        />
       </div>
       <div className="elementor-container">
         <Image
@@ -81,6 +90,7 @@ export default function About() {
           </p>
         </div>
       </div>
-    </diV>
+      <Footer />
+    </div>
   );
 }

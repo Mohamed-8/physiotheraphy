@@ -1,24 +1,22 @@
 import Image from "next/image";
 import "../public/page.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <div>
-      <div class="topnav">
-        <a>Home</a>
-        <a>About</a>
-        <a>Pages</a>
-        <a>Blog</a>
-        <a>Therapies</a>
-        <a>Contact Me</a>
-      </div>
-      <div className="elementor-container">
-        <Image
-          src="/health.jpg"
-          width={700}
-          height={500}
-          alt="Picture of health"
-        />
+    <div className="screen-preview">
+      <Header />
+      <div className="banner-section"></div>
+      <div className="elementor-container elementor-background">
+        <div>
+          <Image
+            src="/health.jpg"
+            width={700}
+            height={500}
+            alt="Picture of health"
+          />
+        </div>
         <div>
           <h5 className="dashed">About our therapies</h5>
           <h3>Take care of your mind. Explore our psychology section!</h3>
@@ -211,91 +209,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="elementor-top-section">
-        <div className="elementor-top-content">
-          <h2>
-            Take care of your mental health & find balance <br /> with help of
-            psychology!
-          </h2>
-          <p>
-            Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-          </p>
-        </div>
-        <div className="elementor-button-wrapper">
-          <button className="elementor-top-button">Contact Us</button>
-        </div>
-      </div>
-
-      <div class="footer">
-        <div class="content">
-          <div class="services">
-            <h4>Pages</h4>
-            <p>
-              <a href="#">About Us</a>
-            </p>
-            <p>
-              <a href="#">Contact Us</a>
-            </p>
-            <p>
-              <a href="#">Faq</a>
-            </p>
-            <p>
-              <a href="#">Team</a>
-            </p>
-          </div>
-          <div class="social-media">
-            <h4>Company</h4>
-            <p>
-              <a href="#">Linkedin</a>
-            </p>
-            <p>
-              <a href="#">Twitter</a>
-            </p>
-            <p>
-              <a href="#">Github</a>
-            </p>
-            <p>
-              <a href="#">Facebook</a>
-            </p>
-            <p>
-              <a href="#">Instagram</a>
-            </p>
-          </div>
-          <div class="links">
-            <h4>Quick links</h4>
-            <p>
-              <a href="#">Home</a>
-            </p>
-            <p>
-              <a href="#">About</a>
-            </p>
-            <p>
-              <a href="#">Blogs</a>
-            </p>
-            <p>
-              <a href="#">Contact</a>
-            </p>
-          </div>
-          <div class="details">
-            <h4 class="address">Address</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur <br />
-              adipisicing elit. Cupiditate, qui!
-            </p>
-            <h4 class="mobile">Mobile</h4>
-            <p>
-              <a href="#">+91-9836576571</a>
-            </p>
-            <h4 class="mail">Email</h4>
-            <p>
-              <a href="#">physiotheraphy@gmail.com</a>
-            </p>
-          </div>
-        </div>
-        <footer>
-          <hr />© 2022 physiotheraphy.
-        </footer>
-      </div>
+      <Footer />
     </div>
   );
 }
